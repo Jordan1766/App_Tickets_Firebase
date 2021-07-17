@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Arduino智慧家庭</string>
+    <string name="open_weather_key">f591ed061dcf092905d6671a2a5772b0</string>
+    <string name="open_weather_key2">d11f37cd1006fa3265cdd3ceb6354c2c</string>
+    <string name="open_weather_base_url">https://api.openweathermap.org/data/2.5/weather?q=%s,%s&amp;appid=%s</string>
+    <string name="open_weather_icon_url">https://openweathermap.org/img/wn/%s@4x.png</string>
+</resources>

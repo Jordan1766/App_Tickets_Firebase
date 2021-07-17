@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!-- log -->
+    <TextView
+        android:id="@+id/tv_log"
+        android:text="345,30.10,50.00,0"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- control -->
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/ib_warning"
+            android:onClick="warningOnClick"
+            android:src="@drawable/buzzer_off"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/ib_redLed"
+            android:onClick="redLedOnClick"
+            android:src="@drawable/groy_ball"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/ib_greenLed"
+            android:onClick="greenLedOnClick"
+            android:src="@drawable/groy_ball"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/ib_yellowLed"
+            android:onClick="yellowLedOnClick"
+            android:src="@drawable/groy_ball"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/ib_door"
+            android:onClick="doorOnClick"
+            android:src="@drawable/door_close"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <!-- open weather -->
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ib_icon"
+            android:onClick="openWeatherOnClick"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/weather_icon" />
+
+        <Button
+            android:id="@+id/btn_message"
+            android:onClick="openWeatherOnClick"
+            android:text="Clouds"
+            android:backgroundTint="#cccccc"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/tv_temp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="0.0°C"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/tv_temp_feel"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="0.0°C"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/tv_humi"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="0.0%"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+
+    <!-- house weather -->
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_cds_scanner"
+            android:text="0 lu"
+            android:textSize="25dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/tv_temp_scanner"
+            android:text="0.0°C"
+            android:textSize="25dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/tv_humi_scanner"
+            android:text="0.0%"
+            android:textSize="25dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
